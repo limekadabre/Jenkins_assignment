@@ -1,0 +1,35 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $("#nav").load("nav.html");
+        });
+    </script>
+</head>
+<body>
+<div id="nav"></div>
+<div>
+    <h1>Sign In</h1>
+    <form>
+        <div id="login-unsuccess"></div>
+        <div>
+            <label for="enterEmailFld"> Email Address </label>
+            <input id="enterEmailFld" type="email"> 
+        </div>
+        <div>
+            <label for="enterPwdFld">Password </label>
+            <input type="password" id="enterPwdFld">
+        </div>
+        <div>
+            <button type="button" id="signInBtn">Login</button>
+            <b><a href="register.html">Register if new user</a></b>
+          
+
+        </div>
+    </form>
+    
+</div>
+<script src="loginFunction.js"></script>
+</body>
+</html>
